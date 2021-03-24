@@ -45,10 +45,11 @@ class Calculator extends React.Component{
           <Screen className="thumbnail" result={this.returnOut()} screenInput={this.state.input}></Screen>
           <div className='mygrid'>
             <Body changeVal = {this.changeInput}></Body>
-              <div className='controls'>
+            <div className='controls'>
                 <Button clickme={this.evaluate}>=</Button>
                 <Button clickme={this.clear}>C</Button>
-              </div>
+                <Button clickme={this.changeInput}>00</Button>
+            </div>
           </div>
         </div>
       </div>

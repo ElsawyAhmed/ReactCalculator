@@ -5,9 +5,13 @@ class Body extends React.Component{
 
  render(){ 
      return (
-      <div className="body">
+      <div className="gridbody"> 
+        <div>
         <Numbers clickNumber={this.props.changeVal}></Numbers>
+        </div>
+        <div>
         <Operators clickOperator={this.props.changeVal}></Operators>
+        </div>
       </div>
     );
   }

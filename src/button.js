@@ -14,7 +14,9 @@ class Button extends React.Component {
         else if(myvalue ==='c'){
             this.props.clickme()
         }
+        else{
         this.props.clickme(myvalue)
+        }
     }
 
 

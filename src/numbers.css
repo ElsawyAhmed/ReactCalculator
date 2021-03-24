@@ -2,3 +2,19 @@
     display: flex;
     flex-direction: row-reverse;
   } */
+
+.numbers-grid{
+      display: grid;
+      grid-template-columns: auto;
+  }
+.numbers-grid>div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+Button{
+
+    width: 100%;
+
+}

@@ -10,8 +10,8 @@ class Operators extends React.Component{
           <Button clickme={this.props.clickOperator}>+</Button>
           <Button clickme={this.props.clickOperator}>-</Button>
           <Button clickme={this.props.clickOperator}>/</Button>
-          <Button clickme={this.props.clickOperator}>%</Button>
-          <Button clickme={this.props.clickOperator}>*</Button>
+          {/* <Button clickme={this.props.clickOperator}>%</Button>
+          <Button clickme={this.props.clickOperator}>*</Button> */}
      </div>
     );
   }
