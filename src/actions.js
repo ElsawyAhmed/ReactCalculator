@@ -6,12 +6,11 @@ class Operators extends React.Component{
 
  render(){ 
      return (
-      <div className='actions'>
-          <Button clickme={this.props.clickOperator}>+</Button>
-          <Button clickme={this.props.clickOperator}>-</Button>
-          <Button clickme={this.props.clickOperator}>/</Button>
-          {/* <Button clickme={this.props.clickOperator}>%</Button>
-          <Button clickme={this.props.clickOperator}>*</Button> */}
+      <div  className='rightFlex' >
+          <Button className="square btn btn-primary" clickme={this.props.clickOperator}>+</Button>
+          <Button className="square btn btn-primary" clickme={this.props.clickOperator}>-</Button>
+          <Button className="square btn btn-primary" clickme={this.props.clickOperator}>%</Button>
+          <Button className="square btn btn-primary" clickme={this.props.clickOperator}>*</Button>
      </div>
     );
   }

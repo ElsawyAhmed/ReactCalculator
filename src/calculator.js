@@ -4,6 +4,7 @@ import React from 'react'
 import Body from './content'
 import Screen from './screen'
 import Button from './button';
+import {LeftBody,RightBody} from './content';
 class Calculator extends React.Component{
   constructor(){
     super()
@@ -35,21 +36,24 @@ class Calculator extends React.Component{
     clear=()=>{
       this.setState({input:'',output:''})
     }
+    absolute=()=>{
+      this.setState({output:Math.abs(this.state.output)})
+    }
 
   render() {
     return (
 
       <div className="calculator row">
-         <div className="col-sm-2 col-md-3 col-lg-3"></div>
+        <div className="col-sm-2 col-md-3 col-lg-3"></div>
         <div className="col-sm-8 col-md-4 col-lg-7">
           <Screen className="thumbnail" result={this.returnOut()} screenInput={this.state.input}></Screen>
-          <div className='mygrid'>
-            <Body changeVal = {this.changeInput}></Body>
-            <div className='controls'>
-                <Button clickme={this.evaluate}>=</Button>
-                <Button clickme={this.clear}>C</Button>
-                <Button clickme={this.changeInput}>00</Button>
-            </div>
+          <div className='inputs'>
+              <Button className="square btn-danger"clickme={this.clear}>C</Button>
+              <Button className="square btn-warning" clickme={this.absolute}>Abs</Button>
+              <Button className="btn btn-info" clickme={this.changeInput}>00</Button>
+              <LeftBody changeVal={this.changeInput}></LeftBody>
+              <Button className="btn btn-success"  clickme={this.evaluate}>=</Button>
+              <RightBody changeVal={this.changeInput}></RightBody>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ class Button extends React.Component {
 
     render(){ 
      return (
-        <button className="square" onClick={this.passmyval} do={this.props.perform} >
+        <button className={this.props.className} onClick={this.passmyval} do={this.props.perform} >
             {this.props.children}
         </button>
         );

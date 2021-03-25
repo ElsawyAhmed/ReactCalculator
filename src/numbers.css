@@ -3,7 +3,7 @@
     flex-direction: row-reverse;
   } */
 
-.numbers-grid{
+/* .numbers-grid{
       display: grid;
       grid-template-columns: auto;
   }
@@ -14,7 +14,6 @@
     align-items: stretch;
 }
 Button{
-
     width: 100%;
 
-}
+} */

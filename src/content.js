@@ -17,3 +17,31 @@ class Body extends React.Component{
   }
 }
 export default Body;
+
+//////////////////////////////////////////////divide body to two parts/////////
+class LeftBody extends React.Component{
+
+  render(){ 
+      return (
+
+         <Numbers clickNumber={this.props.changeVal}></Numbers>
+     
+     );
+   }
+ }
+
+
+ class RightBody extends React.Component{
+
+  render(){ 
+      return (
+ 
+           <Operators clickOperator={this.props.changeVal}></Operators>
+ 
+     );
+   }
+ }
+ export  {LeftBody,RightBody};
+ 
+ 
+
